@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "gulp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stepanic4/Time-is-money.git"
+  },
+  "author": "Zolotukhin Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stepanic4/Time-is-money/issues"
+  },
+  "homepage": "https://github.com/Stepanic4/Time-is-money#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.11",
+    "dal": "^0.1.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "imagemin-pngquant": "^5.0.0",
+    "sass": "^0.5.0"
+  }
+}
