@@ -1,10 +1,12 @@
 
 /**********************************************     GENERAL STYLES      ********************************************/
-
 * 
 	box-sizing: border-box
 	padding: 0
 	margin: 0
+
+ @font-face font-family:"Lobster1.4"src: url("../fonts/Lobster1.4.ttf") format("truetype")
+ @font-face font-family:"OpenSansRegular"src: url("../fonts/OpenSansRegular.ttf") format("truetype")
 
 
 .wrapper 
@@ -14,33 +16,24 @@
 	min-width: 320px
 	overflow: hidden
 
-
 .wrapper-inner 
 	width: 100%
 	max-width: 1440px
 	margin: 0 auto
-
-
-
-header[role='banner']
-	padding: 0 30px
-	
-
 
 .wrapper-inner:after 
 	content: ''
 	display: block
 	clear: both
 
-
 button:focus 
 	outline: none
-
 
 a:focus 
 	outline: none
 
-
+li 
+	list-style-type: none
 
 /*****************************************************     HEADER      ***********************************************/
 
@@ -48,21 +41,19 @@ header[role='banner']
 	padding: 30px 133px 0 133px
 
 
+.logo
+    font-family: "Lobster 1.4"
+    font-size: 20px
 
 .logo a 
 	float: left
 	color: #44C0C2
 	text-decoration: none
-
-
-li 
-	list-style-type: none
-
-
-nav 
-	display: flex 
-	max-width: 600px
-	height: 100px
+	
+nav
+	display: inline-flex
+	font-style: normal
+	font-weight: normal
 	float: right
 
 nav ul li 
@@ -83,8 +74,57 @@ nav ul li a
 	display: block
 	width: 85px
 	text-align: center
-	line-height: 45px
+	line-height: 65px
+	margin-right: 11.5px
 	color: #484C55
 	text-decoration: none
 	transition: .4s
 	border-bottom: 3px solid transparent
+
+/*********************************************** SLIDER  **********************************************************/
+    
+
+.slide img 
+    max-width: 100%
+
+.slide 
+	display: block
+	position: relative
+	z-index: 1
+	text-align: center
+
+
+.slide-info 
+	display: flex
+	flex-direction: column
+	align-items: center
+	// height: 330px
+	// width: 550px
+	position: absolute
+	top: 70px
+	left: 25%
+	z-index: 100
+
+
+.slide-info h3 
+	font-size: 38px
+	color: #fff
+	font-weight: 100
+	padding: 25px 0 25px 55px
+	line-height: 1
+
+.slider-info p 
+    color: #fff
+
+.slide-info a 
+	font-size: 19px
+	width: 150px
+	text-decoration: none
+	color: #fff
+	font-weight: 100
+	transition: .5s
+	border: 3px solid white
+	padding: 10px 0
+	margin-top: 50px
+	border-radius: 5px
+
