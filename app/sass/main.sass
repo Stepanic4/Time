@@ -52,6 +52,7 @@ header[role='banner']
 	
 nav
 	display: inline-flex
+	font-family: 'Open Sans', sans-serif
 	font-style: normal
 	font-weight: normal
 	float: right
@@ -83,48 +84,81 @@ nav ul li a
 
 /*********************************************** SLIDER  **********************************************************/
     
-
-.slide img 
+#block-for-slider 
     max-width: 100%
+    margin: 0 auto
+
+#viewport 
+    max-width: 100%
+    position: relative
+    overflow: hidden
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    -o-user-select: none
+    user-select: none
+    text-align: center
+
+#slidewrapper 
+    position: relative
+    width: calc(100% * 4)
+    -webkit-transition: 1s
+    -o-transition: 1s
+    transition: 1s
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1)
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1)
+    transition-timing-function: cubic-bezier(.67,.01,.23,1)
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li 
+    margin: 0
+    padding: 0
 
 .slide 
-	display: block
-	position: relative
-	z-index: 1
-	text-align: center
+    width: calc(100%/4)
+    list-style: none
+    display: inline
+    float: left
 
+.slide-img 
+    max-width: 100%
 
-.slide-info 
-	display: flex
-	flex-direction: column
-	align-items: center
-	// height: 330px
-	// width: 550px
-	position: absolute
-	top: 70px
-	left: 25%
-	z-index: 100
+#prev-btn, #next-btn 
+    position: absolute
+    background: url(../img/sprite-slider.png)
+    width: 50px
+    height: 50px
+    background-color: #fff
+    border-radius: 50%
+    top: calc(50% - 25px)
 
+#prev-btn:hover, #next-btn:hover 
+    cursor: pointer
 
-.slide-info h3 
-	font-size: 38px
-	color: #fff
-	font-weight: 100
-	padding: 25px 0 25px 55px
-	line-height: 1
+#prev-btn 
+    left: 20px
 
-.slider-info p 
-    color: #fff
+#next-btn 
+    right: 20px
+    background-position: -50px 0
 
-.slide-info a 
-	font-size: 19px
-	width: 150px
-	text-decoration: none
-	color: #fff
-	font-weight: 100
-	transition: .5s
-	border: 3px solid white
-	padding: 10px 0
-	margin-top: 50px
-	border-radius: 5px
+#nav-btns 
+    position: absolute
+    width: 100%
+    bottom: 20px
+    padding: 0
+    margin: 0
+    text-align: center
+
+.slide-nav-btn 
+    position: relative
+    display: inline-block
+    list-style: none
+    width: 20px
+    height: 20px
+    background-color: #fff
+    border-radius: 50%
+    margin: 3px
+
+.slide-nav-btn:hover 
+    cursor: pointer
 

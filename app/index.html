@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.sass">
 </head>
 <body>
 
@@ -35,70 +36,32 @@
 
 			</div>
 
-			<section class="slider-wrap">
-
-			<div class="wrapper-inner">
-
-				<div class="slider">
-					
-					<div class="slide">
-						<img src="img/slider.png" alt="slide">
-
-						<div class="slide-info">
-
-							<h3>This is a main heading</h3>
-
-							<p>Lorem lpsum is simply dummy text<br/>of the printing</p>
-
-							<a href="#">Learn More</a>
-
-						</div>
-
-					</div>
-
-					<div class="slide">
-
-						<img src="img/slider.png" alt="slide">
-
-						<div class="slide-info">
-
-							<h3>This is a main heading</h3>
-
-							<p>Lorem lpsum is simply dummy text<br/>of the printing</p>
-
-							<a href="#">Learn More</a>
-
-						</div>
-
-					</div>
-
-					<div class="slide">
-
-						<img src="img/slider.png" alt="slide">
-
-						<div class="slide-info">
-
-							<h3>This is a main heading</h3>
-
-							<p>Lorem lpsum is simply dummy text<br/>of the printing</p>
-
-							<a href="#">Learn More</a>
-
-						</div>
-
-					</div>
-
-				</div>
-				
-			</div>
-
-		</section>
-
 		</header>
 
 
 
+		<div id="block-for-slider">
+			<div id="viewport">
+				<ul id="slidewrapper">
+					<li class="slide"><img src="img/slider.png" alt="slide"></li>
+					<li class="slide"><img src="img/slider1.png" alt="slide"></li>
+					<li class="slide"><img src="img/slider2.png" alt="slide"></li>
+					<li class="slide"><img src="img/slider.png" alt="slide"></li>
+				</ul>
 
+				<div id="prev-next-btns">
+					<div id="prev-btn"></div>
+					<div id="next-btn"></div>
+				</div>
+
+				<ul id="nav-btns">
+					<li class="slide-nav-btn"></li>
+					<li class="slide-nav-btn"></li>
+					<li class="slide-nav-btn"></li>
+					<li class="slide-nav-btn"></li>
+				</ul>
+			</div>
+		</div>
 
 
 
@@ -107,8 +70,12 @@
 
 	</div>
 
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	
+
+
+</div> 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script> 
+
 </body>
 </html>
