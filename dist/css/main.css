@@ -604,6 +604,8 @@ textarea {
 @media (max-width: 771px) {
   .team h3 {
     margin: 20px 0; }
+  .user ul li {
+    margin-left: 0; }
   .user {
     text-align: center; }
   .user ul {
@@ -713,9 +715,7 @@ textarea {
 /********************************************************************  410px *******************************************************/
 @media (max-width: 410px) {
   header[role='banner'] {
-    padding-left: 40px; }
-  .user ul li {
-    margin-left: 0; } }
+    padding-left: 40px; } }
 
 /********************************************************************  370px *******************************************************/
 @media (max-width: 370px) {
