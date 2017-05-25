@@ -72,3 +72,7 @@ function prevSlide() {
     }
 }
 
+
+$('.fa-bars').click(function() {
+  $('nav').toggleClass('active');
+});
