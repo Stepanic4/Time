@@ -137,10 +137,10 @@ nav ul li a {
   cursor: pointer; }
 
 #prev-btn {
-  left: 50px; }
+  left: 5%; }
 
 #next-btn {
-  right: 50px;
+  right: 5%;
   background-position: -50px 0; }
 
 .slider-info {
@@ -715,7 +715,7 @@ textarea {
 /********************************************************************  410px *******************************************************/
 @media (max-width: 410px) {
   header[role='banner'] {
-    padding-left: 40px; } }
+    padding: 0 0 0 5px; } }
 
 /********************************************************************  370px *******************************************************/
 @media (max-width: 370px) {
@@ -724,7 +724,7 @@ textarea {
   .slider-info h2 {
     display: none; }
   .slider-info p {
-    margin-bottom: 10px; }
+    margin-bottom: 10%; }
   .slider-info a {
     padding: 5px;
     font-size: 18px;
