@@ -29,8 +29,7 @@ li {
 
 /*****************************************************     HEADER      ***********************************************/
 header[role='banner'] {
-  padding: 0 133px 0 133px; 
-}
+  padding: 0 133px 0 133px; }
 
 header {
   width: 100%;
@@ -138,10 +137,10 @@ nav ul li a {
   cursor: pointer; }
 
 #prev-btn {
-  left: 5%; }
+  left: 50px; }
 
 #next-btn {
-  right: 5%;
+  right: 50px;
   background-position: -50px 0; }
 
 .slider-info {
@@ -716,7 +715,7 @@ textarea {
 /********************************************************************  410px *******************************************************/
 @media (max-width: 410px) {
   header[role='banner'] {
-    padding: 0 0 0 10px; } }
+    padding-left: 40px; } }
 
 /********************************************************************  370px *******************************************************/
 @media (max-width: 370px) {
@@ -725,10 +724,10 @@ textarea {
   .slider-info h2 {
     display: none; }
   .slider-info p {
-    margin-bottom: 10%; }
+    margin-bottom: 10px; }
   .slider-info a {
-    padding: 1%;
-    font-size: 15px;
+    padding: 5px;
+    font-size: 18px;
     font-weight: 100; } }
 
 /********************************************************************  330px *******************************************************/
